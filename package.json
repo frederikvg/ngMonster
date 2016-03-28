@@ -1,0 +1,38 @@
+{
+  "name": "ngmonster",
+  "version": "1.0.0",
+  "description": "Create your D&D character",
+  "main": "ngMonster.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "supervisor ngMonster.js"
+  },
+  "keywords": [
+    "d&d",
+    "hreocreator",
+    "website",
+    "monster",
+    "Frederik van Genderen"
+  ],
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "author": "Frederik van Genderen <www.frederikvangenderen.nl>",
+  "license": "MIT",
+  "dependencies": {
+    "bcrypt-nodejs": "*",
+    "body-parser": "~1.0.0",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "express": "~4.2.0",
+    "express-session": "~1.0.4",
+    "jade": "*",
+    "mongoose": "~3.8.23",
+    "morgan": "~1.0.0",
+    "passport": "~0.2.0",
+    "passport-local": "~1.0.0",
+    "serve-favicon": "^2.3.0"
+  }
+}

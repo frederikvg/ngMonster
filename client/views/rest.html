@@ -1,0 +1,387 @@
+    <h1>Monster List</h1>
+    <div>
+        <div class="">
+            <div class="input-buttons col-xs-4 col-sm-3">
+                <a class="clear-text" ng-click="laatzien=true"><i class="fa fa-trash-o fa-2x"></i></a>
+                <a ng-click="deletePopup()" ng-model-instant><i class="fa fa-plus fa-2x"></i></a>
+            </div> 
+        </div> 
+        <div class="">
+            <div ng-repeat="monster in monsters">
+                <p>{{monster.heroClass}} : {{monster.monsterClass}} : {{monster.blabla}} : {{monster.yyy}}</p>
+            </div>
+            <table>
+                <tr>
+                    <td>Character:</td>
+                    <td><input type=text ng-model="monster.heroclass"></td>
+                    <td>Player:</td>
+                    <td><input type=text ng-model="monster.monsterclass"></td>
+                </tr>
+                <tr>
+                    <td>Classes:</td>
+                    <td><input type=text ng-model="monster.blabla"></td>
+                    <td>Level:</td>
+                    <td><input type=text ng-model="monster.yyy"></td>
+                    </tr>
+            </table>
+        </div>
+
+        <div class="inner create raceclass">
+            <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h3 class="panel-title">Create your hero</h3>
+                  </div>
+                <div class="panel-body createhero">
+                    <div class="input-group">
+                        <span class="input-group-addon" id="basic-addon3">NAME</span>
+                        <input type="text" class="form form-control" id="basic-url">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" ng-click="alignmentneutral=true">Go!</button>
+                        </span>
+                    </div>
+                    <div class="input-group" ng-show="alignmentneutral">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-6">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>GOOD</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button" ng-click="alignmentgood=true">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-6">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>EVIL</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button" ng-click="alignmentevil=true">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group" ng-show="alignmentgood">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>DWARF</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>ELF</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>GNOME</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>HALFLING</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>HUMAN</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>TIEFLING</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="input-group" ng-show="alignmentevil">
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>NEANDERTHAL</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>KOBOLD</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>ORC</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>DRAGONBORN</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>HALF-ORC</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-4">
+                                <div class="thumbnail">
+                                    <img src="" alt="">
+                                    <div class="caption">
+                                        <h3>GOBLIN</h3>
+                                        <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+                                        <p><a href="#" class="btn btn-default" role="button">Button</a></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="input-group" ng-show="class">
+                        <span class="input-group-addon" id="basic-addon3">CLASS</span>
+                        <input type="text" class="form form-control" id="basic-url">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button" ng-click="laatzien=true">Go!</button>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="inner create specs">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 class="panel-title">HERO NAME</h3>
+                </div>
+                <div class="panel-body">
+                        <div class="col-xs-6">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    ABILITY
+                                </div>
+                                <div class="panel-body ability">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">STR</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">DEX</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">CON</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">INT</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">CHA</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    SKILL
+                                </div>
+                                <div class="panel-body skill">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Lichaamsbeweging</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Oplettendheid</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Dieverij</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Prefessie</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Acteerwerk en muziek</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Dieren</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Sluipen</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Wildernis</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Magiekunde, non combat magic</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Close Combat</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Ranged Combat</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    ATTACK
+                                </div>
+                                <div class="panel-body attacks">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Two handed Magic Sword</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Werpspeer</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    DEFENSE
+                                </div>
+                                <div class="panel-body defense">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Tegen close combat zelf ook close combat</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Tegen close combat en zelf bezig met iets</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Tegen close combat en zelf vluchtend of ontwijkend</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Tegen ranged combat</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">Non combat magic (dus niet close of range)</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-6"><div class="panel panel-default">
+                                <div class="panel-heading">
+                                    PROFILE PICTURE
+                                </div>
+                                <div class="panel-body ability">
+                                    <img style="width:100%; height:400px;" />
+                                </div>
+                            </div><div class="panel panel-default">
+                                <div class="panel-heading">
+                                    SPECIAL
+                                </div>
+                                <div class="panel-body ability">
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">STR</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">DEX</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">CON</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">INT</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                    <div class="input-group">
+                                        <span class="input-group-addon" id="basic-addon3">CHA</span>
+                                        <input type="text" class="form form-control" id="basic-url">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="col-xs-12">
+                            <button type="submit" id="submit" name="submit" class="form-btn semibold">Sla op</button> 
+                        </div>
+
+                </div>
+            </div>
+        </div>
+</div>
